@@ -1,11 +1,8 @@
-// routes/clienteRoutes.ts
-
 import { Router } from 'express';
 import { connect } from '../db';
 
 const router = Router();
 
-// Criar cliente
 router.post('/clientes', async (req, res) => {
   const { nome, email, telefone } = req.body;
   
@@ -24,7 +21,6 @@ router.post('/clientes', async (req, res) => {
   }
 });
 
-// Obter todos os clientes
 router.get('/clientes', async (req, res) => {
   try {
     const pool = await connect();
@@ -37,7 +33,6 @@ router.get('/clientes', async (req, res) => {
   }
 });
 
-// Atualizar cliente
 router.put('/clientes/:id', async (req, res) => {
   const { id } = req.params;
   const { nome, email, telefone } = req.body;
@@ -58,7 +53,6 @@ router.put('/clientes/:id', async (req, res) => {
   }
 });
 
-// Deletar cliente
 router.delete('/clientes/:id', async (req, res) => {
   const { id } = req.params;
 
