@@ -5,7 +5,6 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 const localizer = momentLocalizer(moment);
 
 const MyCalendar = () => {
-  // Defina alguns eventos de exemplo
   const events = [
     {
       id: 0,
@@ -18,8 +17,7 @@ const MyCalendar = () => {
       title: 'Evento 2',
       start: new Date(2024, 9, 9, 14, 0), // 9 de outubro de 2024 às 14:00
       end: new Date(2024, 9, 9, 15, 30),  // 9 de outubro de 2024 às 15:30
-    },
-    // Adicione mais eventos conforme necessário
+    }, 
   ];
 
   return (

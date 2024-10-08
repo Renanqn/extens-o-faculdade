@@ -14,19 +14,18 @@ export default function Home() {
   );
 }
 
-// Estilos para ajustar o layout
 const layoutStyle = {
   display: 'flex',
-  height: '100vh', // Garante que a altura ocupe toda a tela
+  height: '100vh', 
 };
 
 const contentContainerStyle = {
   flex: 1,
-  marginLeft: '250px', // Deixa espaço para a sidebar
+  marginLeft: '250px',
 };
 
 const mainContentStyle = {
   padding: '20px',
-  marginTop: '60px', // Deixa espaço para o header
+  marginTop: '60px',
   color: '#000',
 };

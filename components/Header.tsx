@@ -27,7 +27,6 @@ const Header: React.FC = () => {
   );
 };
 
-// Estilo do header
 const headerStyle: React.CSSProperties = {
   display: 'flex',
   justifyContent: 'space-between',
@@ -37,14 +36,13 @@ const headerStyle: React.CSSProperties = {
   color: '#333',
   position: 'fixed',
   top: 0,
-  left: '170px',
+  left: '160px',
   width: 'calc(100% - 170px)',
   height: '70px',
   zIndex: 999,
   boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.1)',
 };
 
-// Estilo do menu de usuário
 const userMenuStyle: React.CSSProperties = {
   display: 'flex',
   alignItems: 'center',
@@ -54,19 +52,17 @@ const userMenuStyle: React.CSSProperties = {
   cursor: 'pointer',
 };
 
-// Estilo do ícone de login com arredondamento
 const iconContainerStyle: React.CSSProperties = {
   width: '60px',
   height: '60px',
-  borderRadius: '50%', // Arredonda o contêiner
-  overflow: 'hidden',   // Garante que a imagem não ultrapasse os limites do contêiner
-  backgroundColor: '#f0f0f0', // Cor de fundo opcional
+  borderRadius: '50%', 
+  overflow: 'hidden',   
+  backgroundColor: '#f0f0f0',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
 };
 
-// Estilo do dropdown
 const dropdownStyle: React.CSSProperties = {
   position: 'absolute',
   top: '100%',
@@ -79,14 +75,12 @@ const dropdownStyle: React.CSSProperties = {
   marginTop: '10px',
 };
 
-// Estilo do menu suspenso
 const dropdownMenuStyle: React.CSSProperties = {
   listStyle: 'none',
   padding: '10px 0',
   margin: 0,
 };
 
-// Estilo dos itens do menu suspenso
 const dropdownItemStyle: React.CSSProperties = {
   padding: '10px 20px',
   cursor: 'pointer',

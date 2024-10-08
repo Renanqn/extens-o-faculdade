@@ -1,11 +1,9 @@
-// pages/agendamentos.tsx
-
 import { useState } from 'react';
-import Layout from '../components/Layout'; // Importa o Layout.tsx
-import MyCalendar from '../components/MyCalendar'; // Importa o novo componente de calendário
+import Layout from '../components/Layout';
+import MyCalendar from '../components/MyCalendar'; 
 
 const Agendamentos = () => {
-  const [viewMode] = useState('month'); // Mantenha o modo de visualização padrão como 'month'
+  const [viewMode] = useState('month'); 
 
   return (
     <Layout> {/* Utiliza o Layout para envolver o conteúdo */}
@@ -22,7 +20,6 @@ const Agendamentos = () => {
   );
 };
 
-// Estilos da página de agendamentos
 const pageStyle = {
   padding: '20px',
   width: '100%',
