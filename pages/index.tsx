@@ -1,15 +1,13 @@
-import Header from '../components/header';
-import Sidebar from '../components/sidebar';
+import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <div style={containerStyle}>
-        <Sidebar />
+    <div style={layoutStyle}>
+      <Sidebar />
+      <div style={contentContainerStyle}>
+        <Header />
         <main style={mainContentStyle}>
-          <h2>QUE TODOS VOCÊS MORRAM EM ETERNA AGONIA!</h2>
-          {/* Conteúdo do painel */}
         </main>
       </div>
     </div>
@@ -17,14 +15,18 @@ export default function Home() {
 }
 
 // Estilos para ajustar o layout
-const containerStyle = {
+const layoutStyle = {
   display: 'flex',
+  height: '100vh', // Garante que a altura ocupe toda a tela
+};
+
+const contentContainerStyle = {
+  flex: 1,
+  marginLeft: '250px', // Deixa espaço para a sidebar
 };
 
 const mainContentStyle = {
-  marginLeft: '250px', // Deixa espaço para a sidebar
   padding: '20px',
-  width: '100%',
   marginTop: '60px', // Deixa espaço para o header
   color: '#000',
 };
